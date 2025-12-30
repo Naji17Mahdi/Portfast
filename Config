@@ -1,0 +1,11 @@
+Switch>enable 
+Switch#configure 
+Switch(config)#interface fastEthernet 0/1
+Switch(config-if)#spanning-tree portfast 
+%Warning: portfast should only be enabled on ports connected to a single
+host. Connecting hubs, concentrators, switches, bridges, etc... to this
+interface  when portfast is enabled, can cause temporary bridging loops.
+Use with CAUTION
+
+%Portfast has been configured on FastEthernet0/1 but will only
+have effect when the interface is in a non-trunking mode.
